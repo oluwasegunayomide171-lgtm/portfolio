@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oluwasegun — Web Designer & Frontend Developer</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!-- SCROLL PROGRESS -->
+<div id="progress-bar"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Oluwasegun.</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Journey</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#" class="cv-btn" id="cv-btn">⬇ Download CV</a>
+    <button class="theme-btn" id="theme-btn" title="Toggle theme">🌙</button>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#experience" onclick="closeMobile()">Journey</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-canvas">
+    <div class="hero-grid"></div>
+    <div class="hero-orb1"></div>
+    <div class="hero-orb2"></div>
+    <div class="hero-orb3"></div>
+    <canvas id="particles"></canvas>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span> Available for freelance & internship
+    </div>
+    <h1 class="hero-title">
+      Hi, I'm<br><span class="highlight">Oluwasegun</span>
+    </h1>
+    <p class="hero-sub">
+      <span id="typewriter"></span>
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-outline">Contact Me</a>
+    </div>
+  </div>
+  <div class="hero-image-wrap">
+    <div style="position:relative;">
+      <div class="hero-avatar-ring">
+        <div class="hero-avatar-inner">
+          <img src="coat.png" alt="photo" width="350px" h>
+          <!-- <span class="avatar-initials">OS</span> -->
+        </div>
+      </div>
+      <div class="floating-badge fb1">
+        <span class="fb-dot" style="background:#00e5c0;"></span>3+ Projects Built
+      </div>
+      <div class="floating-badge fb2">
+        <span class="fb-dot" style="background:#4f8dff;"></span>Frontend Dev
+      </div>
+      <div class="floating-badge fb3">
+        <span class="fb-dot" style="background:#7c5cfc;"></span>UI/UX Designer
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-arrow"><div class="scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-visual reveal-left">
+    <div class="about-card">
+      <div class="about-avatar-big">OS</div>
+      <div class="about-name">Oluwasegun</div>
+      <div class="about-role">Web Designer · Frontend Developer · Tech Enthusiast</div>
+      <p style="font-size:0.82rem;color:var(--text3);line-height:1.6;">Based in Nigeria · KDA LINKS</p>
+      <div class="about-stat-grid">
+        <div class="about-stat"><div class="num">3+</div><div class="lbl">Projects Completed</div></div>
+        <div class="about-stat"><div class="num">2+</div><div class="lbl">Years Learning</div></div>
+        <div class="about-stat"><div class="num">6</div><div class="lbl">Skills Mastered</div></div>
+        <div class="about-stat"><div class="num">100%</div><div class="lbl">Passion Level</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="about-right reveal-right">
+    <div class="section-label">About Me</div>
+    <h2 class="section-title">Turning ideas into<br>digital experiences</h2>
+    <p class="about-text">
+      I am Oluwasegun, a passionate web designer and tech student from KDA LINKS. I specialize in creating modern, responsive, and user-friendly websites that help businesses grow online. I enjoy turning ideas into real digital experiences using HTML, CSS, JavaScript, and modern web tools.
+    </p>
+    <p class="about-text">
+      I am currently growing my skills in frontend development and animation design, focusing on building clean, fast, and interactive websites. My goal is to become a professional full-stack developer and build impactful digital products that solve real-world problems.
+    </p>
+    <div class="tech-stack">
+      <span class="tech-pill">HTML5</span>
+      <span class="tech-pill">CSS3</span>
+      <span class="tech-pill">JavaScript</span>
+      <span class="tech-pill">Responsive Design</span>
+      <span class="tech-pill">UI/UX</span>
+      <span class="tech-pill">Animations</span>
+      <span class="tech-pill">Figma</span>
+      <span class="tech-pill">Git</span>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 0;">
+    <div class="section-label">What I Do</div>
+    <h2 class="section-title">Skills & Services</h2>
+    <p class="section-desc" style="margin:0 auto;">Delivering quality solutions across the full spectrum of modern web design and development.</p>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card reveal" style="transition-delay:0.1s">
+      <span class="skill-icon">🌐</span>
+      <div class="skill-name">Web Design (UI/UX)</div>
+      <div class="skill-desc">Crafting beautiful, intuitive interfaces that users love — from wireframes to final pixel-perfect designs.</div>
+      <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:0.2s">
+      <span class="skill-icon">💻</span>
+      <div class="skill-name">Frontend Development</div>
+      <div class="skill-desc">Building fast, responsive websites using HTML, CSS, and JavaScript with clean, semantic code.</div>
+      <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:0.3s">
+      <span class="skill-icon">🎨</span>
+      <div class="skill-name">Responsive Design</div>
+      <div class="skill-desc">Creating layouts that work flawlessly across all screen sizes — mobile, tablet, and desktop.</div>
+      <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:0.4s">
+      <span class="skill-icon">⚡</span>
+      <div class="skill-name">Website Animation</div>
+      <div class="skill-desc">Adding life to web pages with smooth transitions, scroll animations, and interactive motion effects.</div>
+      <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:0.5s">
+      <span class="skill-icon">🧩</span>
+      <div class="skill-name">Landing Page Design</div>
+      <div class="skill-desc">High-converting landing pages optimized for business growth, built with purpose and clarity.</div>
+      <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:0.6s">
+      <span class="skill-icon">📱</span>
+      <div class="skill-name">Mobile-Friendly Design</div>
+      <div class="skill-desc">Mobile-first approach ensuring great user experience on any device, any screen resolution.</div>
+      <div class="skill-bar"><div class="skill-fill" data-width="87"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header reveal">
+    <div>
+      <div class="section-label">My Work</div>
+      <h2 class="section-title">Featured Projects</h2>
+    </div>
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+      <button class="filter-btn" data-filter="dev">Development</button>
+      <button class="filter-btn" data-filter="landing">Landing Pages</button>
+    </div>
+  </div>
+  <div class="projects-grid" id="projects-grid">
+    <div class="project-card reveal" data-category="design dev" style="transition-delay:0.1s">
+      <div class="project-thumb">
+        <div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a3a6b,#0f1f40);"></div>
+        <span class="project-thumb-icon">🏦</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">UI/UX</span>
+          <span class="project-tag">HTML/CSS</span>
+          <span class="project-tag">Design</span>
+        </div>
+        <div class="project-title">Banking Website UI</div>
+        <div class="project-desc">A modern, trustworthy banking website interface with secure-feeling design, clean dashboards, and smooth user flows.</div>
+        <a href="#" class="project-link">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="project-card reveal" data-category="design dev" style="transition-delay:0.2s">
+      <div class="project-thumb">
+        <div class="project-thumb-bg" style="background:linear-gradient(135deg,#0d2b1a,#0a2010);"></div>
+        <span class="project-thumb-icon">💼</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">Corporate</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Responsive</span>
+        </div>
+        <div class="project-title">ICT Company Website</div>
+        <div class="project-desc">Professional website for a technology company — featuring services, team showcase, and a polished corporate aesthetic.</div>
+        <a href="#" class="project-link">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="project-card reveal" data-category="design" style="transition-delay:0.3s">
+      <div class="project-thumb">
+        <div class="project-thumb-bg" style="background:linear-gradient(135deg,#2a1060,#1a0840);"></div>
+        <span class="project-thumb-icon">🚀</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">Portfolio</span>
+          <span class="project-tag">CSS Animations</span>
+          <span class="project-tag">Creative</span>
+        </div>
+        <div class="project-title">Portfolio Website Design</div>
+        <div class="project-desc">A creative developer portfolio showcasing work with immersive animations, dark theme, and interactive project displays.</div>
+        <a href="#" class="project-link">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="project-card reveal" data-category="landing dev" style="transition-delay:0.4s">
+      <div class="project-thumb">
+        <div class="project-thumb-bg" style="background:linear-gradient(135deg,#1f3a1a,#0f2010);"></div>
+        <span class="project-thumb-icon">✨</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">Landing Page</span>
+          <span class="project-tag">Animation</span>
+          <span class="project-tag">JS</span>
+        </div>
+        <div class="project-title">Landing Page Animations</div>
+        <div class="project-desc">High-converting landing page with scroll-triggered animations, micro-interactions, and persuasive design patterns.</div>
+        <a href="#" class="project-link">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
+    <div class="reveal-left">
+      <div class="section-label">My Journey</div>
+      <h2 class="section-title">How I got here</h2>
+      <p class="section-desc">A timeline of my growth as a developer and designer — every step building toward something bigger.</p>
+    </div>
+    <div class="timeline reveal-right">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2022 · Beginning</div>
+        <div class="timeline-title">Started Learning Web Design</div>
+        <div class="timeline-desc">Discovered my passion for creating on the web. Began learning the fundamentals of HTML and understanding how websites are built.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2022 · First Milestone</div>
+        <div class="timeline-title">Built First HTML/CSS Project</div>
+        <div class="timeline-desc">Completed my first fully coded webpage from scratch — a personal homepage that turned a concept into real pixels on a screen.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2023 · Levelling Up</div>
+        <div class="timeline-title">Learned JavaScript Basics</div>
+        <div class="timeline-desc">Added interactivity to my toolkit. Learned DOM manipulation, event handling, and how to make websites feel alive and dynamic.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2024 · Real World</div>
+        <div class="timeline-title">Started Building Real-World Websites</div>
+        <div class="timeline-desc">Applied my skills to actual projects — banking UIs, company websites, and landing pages — gaining hands-on client-ready experience.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2025–Present · Growing</div>
+        <div class="timeline-title">Mastering Frontend Animation</div>
+        <div class="timeline-desc">Deep-diving into advanced CSS animations, scroll effects, and interactive experiences. Working toward becoming a full-stack developer.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto;">
+    <div class="section-label">Testimonials</div>
+    <h2 class="section-title">What people say</h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal" style="transition-delay:0.1s">
+      <div class="tquote">"</div>
+      <p class="ttext">Oluwasegun delivered exactly what we needed — a clean, fast, and beautiful website that our clients love. Professional and detail-oriented work.</p>
+      <div class="tauthor">
+        <div class="tav" style="background:linear-gradient(135deg,#4f8dff,#7c5cfc);">AO</div>
+        <div>
+          <div class="tname">Adebayo Okafor</div>
+          <div class="trole">Business Owner</div>
+          <div class="tstars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal" style="transition-delay:0.2s">
+      <div class="tquote">"</div>
+      <p class="ttext">The landing page he built for our product launch exceeded our expectations. Beautiful animations and great attention to responsive design.</p>
+      <div class="tauthor">
+        <div class="tav" style="background:linear-gradient(135deg,#00e5c0,#0f6e56);">CI</div>
+        <div>
+          <div class="tname">Chisom Ihechi</div>
+          <div class="trole">Startup Founder</div>
+          <div class="tstars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal" style="transition-delay:0.3s">
+      <div class="tquote">"</div>
+      <p class="ttext">Very talented young developer. He understood our brand instantly and created a website design that felt premium yet approachable. Highly recommended!</p>
+      <div class="tauthor">
+        <div class="tav" style="background:linear-gradient(135deg,#ff6b6b,#993556);">FO</div>
+        <div>
+          <div class="tname">Funmi Oladele</div>
+          <div class="trole">ICT Manager</div>
+          <div class="tstars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto;">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">Let's build something together</h2>
+    <p class="section-desc" style="margin:0 auto;">Have a project in mind or just want to say hello? Send me a message and let's make it happen.</p>
+  </div>
+  <div class="contact-wrap">
+    <div class="reveal-left">
+      <h3>Contact Info</h3>
+      <p>I'm open to new opportunities, collaborations, and interesting projects. Reach out anytime!</p>
+      <div class="contact-item">
+        <div class="contact-icon">📧</div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">oluwasegunayomide171@gmail.com</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">+234 7076 838 209</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">Location</div>
+          <div class="contact-value">KDA LINKS, Nigeria</div>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-btn">GH</a>
+        <a href="#" class="social-btn">LI</a>
+        <a href="#" class="social-btn">TW</a>
+        <a href="#" class="social-btn">IG</a>
+      </div>
+    </div>
+    <div class="reveal-right">
+      <form class="contact-form" id="contact-form" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;">Full Name</label>
+            <input type="text" id="name" placeholder="Enter name" />
+            <span class="form-error" id="name-err">Please enter your name.</span>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="email" placeholder="Enter email" />
+            <span class="form-error" id="email-err">Enter a valid email.</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" id="subject" placeholder="Project inquiry, collaboration..." />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="message" placeholder="Tell me about your project or idea..."></textarea>
+          <span class="form-error" id="msg-err">Please write a message.</span>
+        </div>
+        <button type="submit" class="btn-primary" style="align-self:flex-start;border:none;">Send Message ✉</button>
+        <div class="form-success" id="form-success">
+          ✅ Your message has been sent! I'll get back to you soon.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Oluwasegun.</div>
+  <div class="footer-tagline">Building the future one line of code at a time</div>
+  <div class="footer-social">
+    <a href="#" class="social-btn">GH</a>
+    <a href="#" class="social-btn">LI</a>
+    <a href="#" class="social-btn">TW</a>
+    <a href="#" class="social-btn">IG</a>
+  </div>
+  <div class="footer-copy">© 2026 Oluwasegun · All rights reserved · Made with ❤️ in Nigeria</div>
+</footer>
+
+<script type="module" src="script.js" ></script>
+<!-- 
+// ─── PARTICLES ───
+(function(){
+  const canvas = document.getElementById('particles');
+  const ctx = canvas.getContext('2d');
+  let W, H, particles = [];
+  function resize(){ W = canvas.width = canvas.offsetWidth; H = canvas.height = canvas.offsetHeight; }
+  window.addEventListener('resize', resize); resize();
+  const count = 70;
+  for(let i=0;i<count;i++) particles.push({
+    x: Math.random()*2000, y: Math.random()*900,
+    r: Math.random()*1.8+0.4,
+    vx: (Math.random()-0.5)*0.4, vy: (Math.random()-0.5)*0.4,
+    a: Math.random()*0.5+0.1
+  });
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    particles.forEach(p=>{
+      p.x+=p.vx; p.y+=p.vy;
+      if(p.x<0)p.x=W; if(p.x>W)p.x=0;
+      if(p.y<0)p.y=H; if(p.y>H)p.y=0;
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(79,141,255,${p.a})`;
+      ctx.fill();
+    });
+    // Draw connections
+    for(let i=0;i<particles.length;i++){
+      for(let j=i+1;j<particles.length;j++){
+        const dx=particles[i].x-particles[j].x, dy=particles[i].y-particles[j].y;
+        const dist=Math.sqrt(dx*dx+dy*dy);
+        if(dist<120){
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x,particles[i].y);
+          ctx.lineTo(particles[j].x,particles[j].y);
+          ctx.strokeStyle=`rgba(79,141,255,${0.08*(1-dist/120)})`;
+          ctx.lineWidth=0.5; ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ─── TYPEWRITER ───
+(function(){
+  const phrases = ['Web Designer.','Frontend Developer.','Tech Enthusiast.','UI/UX Creator.'];
+  let i=0,j=0,del=false;
+  const el = document.getElementById('typewriter');
+  function type(){
+    const phrase = phrases[i];
+    if(!del){
+      el.textContent = phrase.slice(0,j+1);
+      j++;
+      if(j===phrase.length){ del=true; setTimeout(type,1800); return; }
+    } else {
+      el.textContent = phrase.slice(0,j-1);
+      j--;
+      if(j===0){ del=false; i=(i+1)%phrases.length; }
+    }
+    setTimeout(type, del?60:100);
+  }
+  setTimeout(type, 1000);
+})();
+
+// ─── SCROLL PROGRESS ───
+window.addEventListener('scroll',()=>{
+  const s = document.documentElement;
+  const p = (s.scrollTop/(s.scrollHeight-s.clientHeight))*100;
+  document.getElementById('progress-bar').style.width = p+'%';
+});
+
+// ─── REVEAL ON SCROLL ───
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      // Animate skill bars
+      e.target.querySelectorAll('.skill-fill').forEach(bar=>{
+        bar.style.width = bar.dataset.width+'%';
+      });
+      const fills = e.target.closest('.skill-card')?.querySelector('.skill-fill');
+      if(fills) fills.style.width = fills.dataset.width+'%';
+    }
+  });
+},{threshold:0.15});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>observer.observe(el));
+// Also observe skill cards
+document.querySelectorAll('.skill-card').forEach(card=>{
+  const bar=card.querySelector('.skill-fill');
+  if(bar){
+    new IntersectionObserver((entries)=>{
+      if(entries[0].isIntersecting) bar.style.width=bar.dataset.width+'%';
+    },{threshold:0.3}).observe(card);
+  }
+});
+
+// ─── THEME TOGGLE ───
+const themeBtn = document.getElementById('theme-btn');
+let dark=true;
+themeBtn.addEventListener('click',()=>{
+  dark=!dark;
+  document.body.classList.toggle('light',!dark);
+  themeBtn.textContent = dark?'🌙':'☀️';
+});
+
+// ─── HAMBURGER ───
+document.getElementById('hamburger').addEventListener('click',()=>{
+  document.getElementById('mobile-menu').classList.toggle('open');
+});
+<!-- function closeMobile(){ document.getElementById('mobile-menu').classList.remove('open'); }
+
+// ─── PROJECT FILTER ───
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter=btn.dataset.filter;
+    document.querySelectorAll('.project-card').forEach(card=>{
+      const cats=card.dataset.category||'';
+      card.style.display=(filter==='all'||cats.includes(filter))?'':'none';
+    });
+  });
+});
+
+// ─── FORM VALIDATION ───
+function submitForm(e){
+  e.preventDefault();
+  let valid=true;
+  const name=document.getElementById('name').value.trim();
+  const email=document.getElementById('email').value.trim();
+  const msg=document.getElementById('message').value.trim();
+  document.getElementById('name-err').style.display=(!name)?'block':'none'; if(!name) valid=false;
+  document.getElementById('email-err').style.display=(!email||!email.includes('@'))?'block':'none'; if(!email||!email.includes('@')) valid=false;
+  document.getElementById('msg-err').style.display=(!msg)?'block':'none'; if(!msg) valid=false;
+  if(valid){
+    document.getElementById('form-success').style.display='block';
+    document.getElementById('contact-form').reset();
+    setTimeout(()=>document.getElementById('form-success').style.display='none',5000);
+  } -->
+<!-- }
+
+// ─── CV DOWNLOAD ───
+document.getElementById('cv-btn').addEventListener('click',e=>{
+  e.preventDefault();
+  const a=document.createElement('a');
+  a.href='data:text/plain;charset=utf-8,Oluwasegun - CV\n\nWeb Designer | Frontend Developer | Tech Enthusiast\nKDA LINKS, Nigeria\n\nSkills: HTML, CSS, JavaScript, UI/UX, Responsive Design, Animations\n\nProjects: Banking Website UI, ICT Company Website, Portfolio Design, Landing Pages\n\nContact: oluwasegun@example.com';
+  a.download='Oluwasegun_CV.txt'; a.click();
+}); -->
+<!-- // ─── SMOOTH NAV LINK HIGHLIGHT ───
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll',()=>{
+  let current='';
+  sections.forEach(s=>{ if(window.scrollY>=s.offsetTop-200) current=s.id; });
+  document.querySelectorAll('.nav-links a').forEach(a=>{
+    a.style.color = a.getAttribute('href')==='#'+current?'var(--text)':'';
+  });
+},{ passive:true });
+<!-- </script> --> --> -->
+</body>
+</html>
